@@ -40,7 +40,7 @@ jobs:
        java-version: '17'
        distribution: 'temurin'
    - run: mvn --batch-mode --update-snapshots --file "DemosauceWeb/pom.xml" verify
-   - run: cd DemosauceWeb && mkdir staging && cp target/*.jar staging
+   - run: cd DemosauceWeb && mkdir staging && cp target/*.jar staging/
    - uses: actions/upload-artifact@v3
      with: 
        name: package
