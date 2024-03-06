@@ -15,7 +15,7 @@ public class BrowserFactory {
 	public static WebDriver driver;
 
 	public WebDriver setupBrowser() {
-		System.out.print("***************** Browser is started ***************");
+		System.out.print("***************** Browser is started ******************");
 
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
